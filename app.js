@@ -19,6 +19,13 @@ do{
             entrada: valorArs + "ARS",
             salida: conversion(valorArs) + "USD",
             fecha: new Date().toLocaleDateString(2)});
+            break;
+        case 2: 
+        alert("saliendo");
+            break;
+        default: 
+        alert("opcion incorrecta");
+        break;
     }
 }while (eleccionUsuario != 2){
     console.log(historial);
