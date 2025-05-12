@@ -1,6 +1,6 @@
 let eleccionUsuario;
 let valorArs;
-let valorusd = 1300;
+const valorusd = 1300;
 historial = [];
 
 function conversion(valorArs){
@@ -13,9 +13,9 @@ do{
         case 1: 
         valorArs = parseInt(prompt("ingrese la cantidad de pesos que desea cambiar a USD"));
         conversion(valorArs);
-        alert("valor: " + conversion(valorArs).toFixed(2));
+        alert("valor: " + conversion(valorArs).toFixed(2) + " USD");
         historial.push({
-            tipo: "divisa:",
+            tipo: "divisa:", 
             entrada: valorArs + "ARS",
             salida: conversion(valorArs) + "USD",
             fecha: new Date().toLocaleDateString(2)});
